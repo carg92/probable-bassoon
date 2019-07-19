@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+ <h2>  <label for="">Escribe tus datos en los campos de texto.</label> </h2>
+  <p>¿Cual es tu nombre? <input type="text" ng-model="name" placeholder="Escribe tu nombre"></p>
+  <p>¿Cuantos años tienes? <input type="number" ng-model="age" placeholder="Escribe tu edad"></p>&nbsp;
+  <label>¿Que librería estas aprendiendo?</label>
+  <select name="select" id="frames" ng-model="frame">
+    <option value="AngularJs">AngularJs</option>
+    <option value="React">React</option>
+    <option value="VueJs">VueJs</option>
+  </select>
+  
+  <h1>Bienvenido: {{name}}, tienes {{age}} años de edad y estas aprendiendo la librería {{frame}} </h1>
+</div>
+
+</body>
+</html> 
